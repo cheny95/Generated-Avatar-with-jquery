@@ -49,11 +49,11 @@ __注意__
 * 1.请先引用jquery
 * 2.如果在初始化入参没有传入参数,将会在selector里获取 data-babyname和data-babysex
 * 3.原来已经有头像的情况下，请将html格式写为  
-
+***
       <div id="selector">
         <img src=" 图片地址 " />
       </div>
-      
+***   
 将会在选择器下面的img标签自动找src的地址
 * 4.以上注意事项请务必保留一个入参值 
 * 5.同一个选择器请只调用一次
@@ -77,8 +77,9 @@ __update__
 *20170104*
 
 1. 修复了多次以ID方式调用只生成第一个头像的问题,采用时间戳生成ID,最高支持9999个元素,自行可以更改
+
 ***
-    var id = new Date().getTime().toString().slice(8); //修改slice的参数
+       var id = new Date().getTime().toString().slice(8); //修改slice的参数
 ***
 
 
