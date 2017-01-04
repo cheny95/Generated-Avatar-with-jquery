@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title></title>
+    <script src="jquery.min.js"></script>
+    <script src="chan.avatar.js"></script>
+</head>
+<style>
+    .aaa,#a,#b{
+        float: left;
+        margin: 10px;
+    }
+</style>
+<body>
+
+<div class="aaa" data-sex="M" data-name="妞妞">
+    <img src="http://pic11.photophoto.cn/20090427/0010023588064534_b.jpg" alt="">
+</div>
+
+<div class="aaa" id="as" data-sex="F" data-name="张晓萌">
+</div>
+<div class="aaa" data-sex="F" data-name="张丽丽"></div>
+<div id="a" data-sex="F" data-name="李雷"></div>
+<div id="b" data-sex="M" data-name="李雷"></div>
+<script type="text/javascript">
+// *
+//  * var params = {
+//  * name: string (可选参数，建议必填)             --- 姓名  字符串 如：张三， 不传则为 “未知”
+//  * url: string (可选参数，建议必填)              --- 头像url  字符串 如果有请传入，否则会多生成一个头像
+//  * sub: int (可选参数)                          --- 截取长度，默认为一个字符，为2的时候，从后向前截取2个字符 如 sub==1的时候，张三，结果是张，sub==2的时候，结果是张三，三个字姓名，张宝贝，结果是宝贝。
+//  * sex: string (可选参数，建议必填)              --- 性别  1个大写英文字母 M和F  默认 F
+//  * width: string (可选参数)                     --- 头像宽度  标准css写法 如 100px,10em,  默认为100px
+//  * height:string (可选参数)                     --- 头像高度  标准css写法 如 100px,10em,  默认为100px
+//  * borderStyle: string (可选参数)               --- 边框风格  标准css写法 如solid,  默认为solid
+//  * borderWidth: string (可选参数)               --- 边框宽度  标准css写法 如 1px,  默认为1px
+//  * borderColor: string (可选参数)               --- 边框颜色  1个色值 如：'#bbb'，支持16进制，rgba，英文单词，默认#eee
+//  * bgColor: array (可选参数)                    --- 背景颜色  2个色值 如：['#aaa','#bbb']，第一个是男，第二个是女，支持16进制，rgba，英文单词混合  默认['rgba(3, 143, 243, 0.6)', 'rgba(243, 3, 147, 0.6)']
+//  * borderRadius: Boolean (可选参数)             --- 是否圆头像  true or false, 默认圆形头像
+//  * lineHeight: string (可选参数)                --- 文字行高  标准css写法  如 100px   默认与头像高度一致
+//  * textAlign: string (可选参数)                 --- 文字是否居中  标准css写法 ,如center. 默认center
+//  * fontSize: string (可选参数)                  --- 文字大小  标准css写法 ,如12px. 默认 1个字 58px，2个字 42px
+//  * color: string (可选参数)                     --- 文字颜色 1个色值 如：'#bbb'，支持16进制，rgba，英文单词，默认#fff
+//  * };
+
+
+ var params={
+ 	sub:2,
+ 	width:'100px',
+ 	height:'100px'
+
+ };
+ var params2={
+     sub:1
+ };
+var params3={
+    sub:2
+};
+    $('.aaa').avatarIcon(params);
+
+    $('#a').avatarIcon(params2);
+
+    $('#b').avatarIcon(params3);
+</script>
+
+</body>
+</html>
