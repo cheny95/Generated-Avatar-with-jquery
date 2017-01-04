@@ -49,7 +49,11 @@ __注意__
 * 1.请先引用jquery
 * 2.如果在初始化入参没有传入参数,将会在selector里获取 data-babyname和data-babysex
 * 3.原来已经有头像的情况下，请将html格式写为  
-      <div id="selector"> <img src="图片地址" /> </div>
+
+      <div id="selector">
+        <img src=" 图片地址 " />
+      </div>
+      
 将会在选择器下面的img标签自动找src的地址
 * 4.以上注意事项请务必保留一个入参值 
 * 5.同一个选择器请只调用一次
