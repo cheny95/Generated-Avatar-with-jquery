@@ -15,14 +15,14 @@ __调用方法__
 
 如：  
 ***
-    $('#id').bbCareIcon(params={});  
+    $('#id').avatarIcon(params={});  
     或 
-    var params={}; $('#id').bbCareIcon(params);
+    var params={}; $('#id').avatarIcon(params);
     
     使用id选择器
-    $('#id').bbCareIcon(object);
+    $('#id').avatarIcon(object);
     使用类选择器(数组)
-    $('.class').bbCareIcon(object);
+    $('.class').avatarIcon(object);
 ***
 
 __参数__
@@ -47,7 +47,7 @@ __参数__
 
 __注意__
 * 1.请先引用jquery
-* 2.如果在初始化入参没有传入参数,将会在selector里获取 data-babyname和data-babysex
+* 2.如果在初始化入参没有传入参数,将会在selector里获取 data-name和data-sex
 * 3.原来已经有头像的情况下，请将html格式写为  
 
       <div id="selector">
@@ -61,15 +61,15 @@ __注意__
 
 __示例代码__
 
-      <div class="aaa" data-babysex="M" data-babyname="妞妞">
+      <div class="aaa" data-sex="M" data-name="妞妞">
           <img src="图片地址" alt="">
       </div>
-          <div class="aaa" id="as" data-babysex="M" data-babyname="李小明"></div>
-          <div class="aaa" data-babysex="F"></div>
-          <div id="a" data-babysex="F"></div>
+          <div class="aaa" id="as" data-sex="M" data-name="李小明"></div>
+          <div class="aaa" data-sex="F"></div>
+          <div id="a" data-sex="F"></div>
       <script type="text/javascript">
           var params = {sub:2};
-          $('.aaa').bbCareIcon(params);
+          $('.aaa').avatarIcon(params);
       </script>
 
 __update__
